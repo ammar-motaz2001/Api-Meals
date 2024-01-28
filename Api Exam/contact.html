@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+
+    <title>Yummy</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <section id="Home" class="">
+        <div class="divdiv d-flex position-fixed z-2">
+            <div class="linkoflink">
+                <div class="div text-white ps-2">
+                    <a href="search.html" class="text-decoration-none d-block text-white ps-4 pb-2">Search</a>
+                    <a href="categories.html" class="text-decoration-none d-block text-white ps-4 pb-2">Categories</a>
+                    <a href="area.html" class="text-decoration-none d-block text-white ps-4 pb-2">Area</a>
+                    <a href="ingredients.html" class="text-decoration-none d-block text-white ps-4 pb-2">Ingredients</a>
+                    <a href="contact.html" class="text-decoration-none d-block text-white ps-4 pb-2">Contact Us</a>
+
+
+                </div>
+        
+                <div class="text-white">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                    <p style="font-size: 15px;">Copyright Â© 2019 All RightsReserved. </p>
+                </div>
+            </div>
+    
+            <div class="some-icons ">
+                <div class="img">
+                    <img src="imgs/logo.png" class="w-50 ms-3" alt="">
+                </div>
+    
+                <div class="close">
+                    <i class="fa-solid fa-list d-none" style="font-size: 30px;"></i>
+                    <i class="fa-solid fa-x" style="font-size: 30px;"></i>
+                </div>
+    
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <i class="fa-solid fa-share-nodes d-block"></i>
+                </div>
+            </div>
+        </div>
+        <div class="div-2 d-flex flex-column justify-content-center">
+            <div class="div  mt-5">
+            <input type="text" id="in-1" class="form-control mb-2 w-50" placeholder="Enter Your Name:" oninput="validationName()">
+            <p class="alert alert-danger w-50 d-none" id="Name">Your Name should Start with Capital Litter</p>
+            <input type="" id="in-2" class="form-control mb-2 w-50 " placeholder="Enter Your E-mail:" oninput="validationEmail()">
+            <p class="alert alert-danger w-50 d-none" id="Email" >Your Email should be like Route@academy.com</p>
+
+            <input type="password" id="in-3" class="form-control mb-2 w-50 " placeholder="Enter Your Password:" oninput="validaionPassword()" >
+            <p class="alert alert-danger w-50 d-none" id="password">Your Password like:  123456</p>
+
+            </div>
+            <div class="divTwo">
+                
+                <input type="text" id="in-5" class="form-control mb-2 w-50 " placeholder="Enter Your Phone:" oninput="validaionPhone() ">
+                <p class="alert alert-danger w-50 d-none" id="phone">You Phone Number like:01022233442</p>
+
+                <input type="number" id="in-6" class="form-control mb-2 w-50 " placeholder="Enter  Your age:" oninput="validaionAge()" >
+                <p class="alert alert-danger w-50 d-none" id="age">You age shouldn't be greater than 100</p>
+
+            </div>
+
+            <div class="button">
+                <button id="btn" class="btn btn-danger">Login</button>
+            </div>
+            
+        </div>
+        </div>
+    </section>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

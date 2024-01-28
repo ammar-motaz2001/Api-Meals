@@ -1,0 +1,167 @@
+body{
+  background-color: black;
+
+}
+#Home{
+  display: flex;
+}
+#Home .linkoflink{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+}
+#Home .some-icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  height: 100vh;
+  width: 30%;
+}
+#Home .div-2{
+  position: absolute;
+  top: 0;
+  left: 410px;
+
+}
+#Home .div-2{
+  width: 65%;
+  margin: auto;
+}
+#Home .div-2 .col-4 .img{
+  position: relative;
+}
+#Home .div-2 .col-4 .img  p{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255,0.5);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 1.5s;
+  text-align: center;
+  padding-top: 30px;
+}
+#Home .div-2 .col-4 .img p:hover{
+  opacity: 100;
+}
+#loading{
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div-2 .container .row .paragraph{
+  font-size: 15px;
+  line-height: normal;
+  text-align: justify;
+  color: rgb(230, 199, 199);
+}
+.loader {
+  color: #fff;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.3s infinite linear;
+  transform: translateZ(0);
+}
+.div-2 .container .row .col-4 .imges p{
+  background-color: rgb(255, 255, 255,0.5);
+  opacity: 0;
+  text-align: center;
+  transition: all 1s;
+}
+.div-2 .container .row .col-4 .imges p:hover{
+  opacity: 100;
+}
+
+#Home .div-2 .container .row .col-4 .images .cont{
+  background-color: rgb(255, 255, 255,0.7);
+  width: 100%;
+  height: 100%;
+  transition: all 1.5s;
+  opacity: 0;
+  overflow: hidden;
+  font-size: 11px;
+}
+#Home .div-2 .container .row .col-4 .images .cont:hover{
+  opacity: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+#Home .div-2 .container .col-4 .imges-meal .address{
+  background-color: rgb(255, 255, 255,0.5);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: all 1s;
+}
+#Home .div-2 .container .col-4 .imges-meal .address:hover{
+  opacity: 100;
+}
+
+#Home .div-2 .container .row .imges-sub .head {
+  opacity: 0;
+  transition: all 1.5s;
+  background-color: rgb(255, 255, 255,0.5);
+}
+#Home .div-2 .container .row .imges-sub .head:hover{
+  opacity: 100;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite
+}
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid #FFF;
+  animation: prixClipFix 2s linear infinite ;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite
+}
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid #FFF;
+  animation: prixClipFix 2s linear infinite ;
+}
+
+@keyframes rotate {
+  100%   {transform: rotate(360deg)}
+}
+
+@keyframes prixClipFix {
+    0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+    50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+    75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+    100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+}
+  
